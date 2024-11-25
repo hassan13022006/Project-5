@@ -20,6 +20,7 @@ body {
 
 .navbar {
     background-color: white;
+    background-image: linear-gradient(to top, #4a4646 10%, rgba(0, 0, 0, 0) 100%);
     
 }
 .navbar .nav-link {
@@ -60,6 +61,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .navbar {
@@ -80,21 +82,9 @@ body {
     background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%28135, 135, 135, 0.5%29" stroke-width="2" linecap="round" linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
 }
 
-
-/* .shits{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .bla{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
-} */
-
+.lead a{
+    text-decoration: none;
+}
 
 
 .featurette-divider {
@@ -117,9 +107,9 @@ body {
     text-align: center;
 }
 
-p{
+/* p{
     font-size: 23px;
-}
+} */
 
 .lead{
     text-align: center;
@@ -141,3 +131,73 @@ p{
         width: 80%;
     }
 } */
+
+.pro img{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel img{
+    height: 90vh;
+}
+
+.textcontent {
+    font-size: 23px;
+    color: #030303;
+}
+
+.main-heading{
+    color:#000000;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+/* Larger screens, text size increases */
+@media screen and (min-width: 1155px) {
+    .textcontent {
+        font-size: 25px;
+    }
+}
+
+/* Smaller screens, text size decreases */
+@media screen and (max-width: 768px) {
+    .textcontent {
+        font-size: 13px;
+    }
+    .about {
+        margin: 20px; /* Adjust this value to what works best for mobile */
+    }
+
+    .container, .shits {
+        margin: 10px; /* Reduce margin for the container on mobile */
+        padding: 10px; /* You can also adjust padding to make it more compact */
+    }
+
+    /* Adjust other specific sections if necessary */
+    .carousel img {
+        height: 50vh; /* Reduce carousel height on mobile if necessary */
+    }
+
+}
+
+/* Extra small screens like mobile devices */
+@media screen and (max-width: 480px) {
+    .textcontent {
+        font-size: 6px;
+    }
+    
+}
+
+.bod{
+    background-color: #f37d7d;
+    box-shadow: 10px 13px rgb(124, 160, 124) ;
+}
